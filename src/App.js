@@ -15,10 +15,14 @@ class App extends Component {
         >
           Formulário de cadastro
         </Typography>
-        <FormularioCadastro />
+        <FormularioCadastro submitFn={onSubmit} />
       </Container>
     );
   }
+}
+
+function onSubmit(data) {
+  console.log(data);
 }
 
 export default App;
